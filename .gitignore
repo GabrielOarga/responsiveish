@@ -2,7 +2,7 @@
 node_modules/
 
 # Output directory
-dist/
+build/
 
 # Coverage & Snapshot testing
 coverage/

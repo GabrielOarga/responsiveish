@@ -1,0 +1,30 @@
+{
+  "name": "responsiveish",
+  "version": "0.0.0",
+  "description": "Responsiveish?",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielOarga/responsiveish.git"
+  },
+  "keywords": [
+    "react",
+    "babel",
+    "responsive",
+    "library"
+  ],
+  "author": "Gabriel Oarga",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/GabrielOarga/responsiveish/issues"
+  },
+  "homepage": "https://github.com/GabrielOarga/responsiveish#readme",
+  "devDependencies": {
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
