@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './style.less';
+
 const App = () => {
   return (
-    <div>
-      Responsiveish
-    </div>
+    <span>
+      Responsiveish design
+    </span>
   )
 };
 
