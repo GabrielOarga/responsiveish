@@ -6,9 +6,9 @@ import './style.less';
 const App = () => {
   return (
     <span>
-      Responsiveish design
+      Responsively design
     </span>
   )
 };
 
-ReactDOM.render(<App />, document.getElementById('responsiveish'));
+ReactDOM.render(<App />, document.getElementById('responsively'));

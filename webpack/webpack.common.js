@@ -20,7 +20,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Responsiveish',
+      title: 'responsively',
       filename: `${join(OUTPUT_PATH, DEFAULT_PUBLIC_PATH)}/index.html`,
       template: `${SRC_PATH}/index.ejs`,
       publicPath: DEFAULT_PUBLIC_PATH

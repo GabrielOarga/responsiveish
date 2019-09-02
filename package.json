@@ -1,7 +1,7 @@
 {
-  "name": "responsiveish",
+  "name": "responsively",
   "version": "0.0.0",
-  "description": "Responsiveish?",
+  "description": "responsively?",
   "main": "index.js",
   "scripts": {
     "build:prod": "webpack --display-error-details --config webpack/webpack.prod.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GabrielOarga/responsiveish.git"
+    "url": "git+https://github.com/GabrielOarga/responsively.git"
   },
   "keywords": [
     "react",
@@ -21,9 +21,9 @@
   "author": "Gabriel Oarga",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/GabrielOarga/responsiveish/issues"
+    "url": "https://github.com/GabrielOarga/responsively/issues"
   },
-  "homepage": "https://github.com/GabrielOarga/responsiveish#readme",
+  "homepage": "https://github.com/GabrielOarga/responsively#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
