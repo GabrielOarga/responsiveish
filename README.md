@@ -1,2 +1,2 @@
-# responsiveish
-Responsiveish?
+# responsively
+Responsively?
