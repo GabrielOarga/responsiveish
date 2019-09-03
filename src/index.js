@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './style.less';
+import App from './components/App';
 
-const App = () => {
-  return (
-    <span>
-      Responsively design
-    </span>
-  )
-};
+import './styles/style.less';
+
+/* NOTE: App Init */
 
 ReactDOM.render(<App />, document.getElementById('responsively'));
