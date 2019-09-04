@@ -1,8 +1,13 @@
 import React from 'react';
 
-const Header = () => {
+import './style.less';
+
+const Header = ({children}) => {
   return (
-    <div>Header</div>
+    <div className={'navbar'}>
+      {children}
+      Navbar
+    </div>
   )
 };
 

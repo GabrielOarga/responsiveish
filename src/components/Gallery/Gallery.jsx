@@ -1,8 +1,12 @@
 import React from 'react';
 
+import './style.less';
+
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <div className={'gallery'}>
+      Gallery
+    </div>
   )
 };
 
