@@ -1,20 +1,54 @@
-.sidebar {
-  background: white;
-  overflow: auto;
+@import '../../styles/variables.less';
 
+.sidebar {
   grid-column-start: start;
   grid-column-end: mid;
   grid-row-start: mid;
   grid-row-end: end;
 
-  display: grid;
+  background: none;
 
-  //grid-template-rows: repeat(auto-fill, 50px);
+  .filter-category {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
 
-  grid-gap: 10px;
+    overflow: hidden;
 
-  .filter {
-    background: antiquewhite;
-    height: 50px;
+    margin-bottom: 40px;
+
+    background: wheat;
+
+    .header {
+      flex: 0 0 50px;
+    }
+
+    .content {
+      overflow: auto scroll;
+      transition: max-height 0.25s ease; //NOTE: Use 'ease' here for best behaviour for smaller than max-height elements
+
+      .filter {
+        background: white;
+        height: 50px;
+      }
+
+      &.expanded {
+        max-height: min(350px, height);
+      }
+
+      &.collapsed {
+        max-height: 0;
+      }
+    }
+
+    .filter {
+      background: antiquewhite;
+      height: 50px;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding: 0 10px 0 10px;
+    }
   }
 }

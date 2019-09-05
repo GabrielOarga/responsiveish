@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 import ModalView from '../containers/ModalView/ModalView';
 import MainView from '../containers/MainView/MainView';
@@ -28,6 +27,4 @@ class Dashboard extends Component {
   }
 }
 
-const container = document.createElement('div');
-document.body.appendChild(container);
-ReactDOM.render(<Dashboard />, container);
+export default Dashboard;

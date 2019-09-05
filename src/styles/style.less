@@ -2,4 +2,30 @@
 
 body {
   background-color: @color;
+
+  div {
+
+  }
+
+  .scrollable {
+    &::-webkit-scrollbar-track
+    {
+      background-color: #ffffff;
+    }
+
+    &::-webkit-scrollbar
+    {
+      width: 12px;
+      height: 6px;
+      -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+      width: 12px;
+      border-radius: 8px;
+      border: 3px solid #fff;
+      background-color: @scrollbar;
+    }
+  }
 }
