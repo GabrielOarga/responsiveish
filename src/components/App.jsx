@@ -15,6 +15,13 @@ class Dashboard extends Component {
   };
 
   render() {
+    const logo = document.querySelectorAll('#splash-logo path');
+    console.log('logo: ', logo);
+
+    logo.forEach((entry) => {
+      console.log('Letter is', entry.getTotalLength());
+    });
+
     return (
       <MainView>
         <h1>React Modal</h1>

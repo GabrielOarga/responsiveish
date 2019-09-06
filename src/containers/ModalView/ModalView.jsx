@@ -5,9 +5,10 @@ import Gallery from '../../components/Gallery/Gallery.jsx';
 import Sidebar from '../../components/Sidebar/Sidebar.jsx';
 
 import './style.less';
+import Splash from '../../components/Splash/Splash';
 
 const ModalView = ({ handleClose, show, children }) => {
-  const showHideClassName = show ? 'modal-background display-block' : 'modal-background display-block';
+  const showHideClassName = show ? 'modal-background display-block' : 'modal-background display-none';
 
   return (
     <div className={showHideClassName}>
@@ -17,6 +18,7 @@ const ModalView = ({ handleClose, show, children }) => {
         </Header>
         <Sidebar />
         <Gallery />
+        <Splash show />
       </section>
     </div>
   );

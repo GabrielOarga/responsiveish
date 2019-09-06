@@ -1,0 +1,85 @@
+#splash {
+  background: aqua;
+
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: start;
+  grid-row-end: end;
+
+  z-index: 666;
+
+  animation: fade-anim 1.5s ease forwards 4s;
+
+  #splash-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #splash-logo path:nth-child(2) {
+    stroke-dasharray: 491.40728759765625px;
+    stroke-dashoffset: 491.40728759765625px;
+    animation: stroke-anim 2s ease forwards;
+  }
+  #splash-logo path:nth-child(3) {
+    stroke-dasharray: 307.9124755859375px;
+    stroke-dashoffset: 307.9124755859375px;
+    animation: stroke-anim 2s ease forwards 0.3s;
+  }
+  #splash-logo path:nth-child(4) {
+    stroke-dasharray: 403.90435791015625px;
+    stroke-dashoffset: 403.90435791015625px;
+    animation: stroke-anim 2s ease forwards 0.6s;
+  }
+  #splash-logo path:nth-child(5) {
+    stroke-dasharray: 257.3969421386719px;
+    stroke-dashoffset: 257.3969421386719px;
+    animation: stroke-anim 2s ease forwards 0.9s;
+  }
+  #splash-logo path:nth-child(6) {
+    stroke-dasharray: 403.9044189453125px;
+    stroke-dashoffset: 403.9044189453125px;
+    animation: stroke-anim 2s ease forwards 1.2s;
+  }
+  #splash-logo path:nth-child(7) {
+    stroke-dasharray: 338.82586669921875px;
+    stroke-dashoffset: 338.82586669921875px;
+    animation: stroke-anim 2s ease forwards 1.5s;
+  }
+  #splash-logo path:nth-child(8) {
+    stroke-dasharray: 443.58599853515625px;
+    stroke-dashoffset: 443.58599853515625px;
+    animation: stroke-anim 2s ease forwards 1.8s;
+  }
+
+  #stylist-logo {
+    fill: transparent;
+    animation: fill-in-anim 2s ease forwards 2s;
+  }
+
+  @keyframes stroke-anim {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes fill-in-anim {
+    to {
+      fill: white;
+    }
+  }
+
+  @keyframes fill-out-anim {
+    to {
+      fill: white;
+    }
+  }
+
+  @keyframes fade-anim {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
