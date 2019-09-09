@@ -8,7 +8,7 @@ import './style.less';
 import Splash from '../../components/Splash/Splash';
 
 const ModalView = ({ handleClose, show, children }) => {
-  const showHideClassName = show ? 'modal-background display-block' : 'modal-background display-none';
+  const showHideClassName = show ? 'modal-background display-block' : 'modal-background display-block';
 
   return (
     <div className={showHideClassName}>
