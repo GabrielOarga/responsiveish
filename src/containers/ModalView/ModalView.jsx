@@ -1,11 +1,11 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Header from '../../components/Header/Header.jsx';
-import Gallery from '../../components/Gallery/Gallery.jsx';
-import Sidebar from '../../components/Sidebar/Sidebar.jsx';
+import Navbar from "../../components/Navbar/Navbar";
+import GalleryView from "../GalleryView/GalleryView";
+import ProductView from "../ProductView/ProductView";
 
 import './style.less';
-import Splash from '../../components/Splash/Splash';
 
 const ModalView = ({ handleClose, show, children }) => {
   const showHideClassName = show ? 'modal-background display-block' : 'modal-background display-block';
@@ -13,12 +13,15 @@ const ModalView = ({ handleClose, show, children }) => {
   return (
     <div className={showHideClassName}>
       <section className="modal">
-        <Header>
-          <button onClick={() => {console.log('hi'); handleClose()}}>back</button>
-        </Header>
-        <Sidebar />
-        <Gallery />
-        <Splash show />
+        <Router>
+          <Navbar>
+            <button onClick={() => {console.log('hi'); handleClose()}}>back</button>
+          </Navbar>
+          <Switch>
+            <Route exact path="/gallery" component={GalleryView}/>
+            <Route path="/product" component={ProductView} />
+          </Switch>
+        </Router>
       </section>
     </div>
   );

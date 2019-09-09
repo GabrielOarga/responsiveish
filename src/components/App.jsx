@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
 import ModalView from '../containers/ModalView/ModalView';
-import MainView from '../containers/MainView/MainView';
 
-class Dashboard extends Component {
+class App extends Component {
   state = { show: false };
 
   showModal = () => {
@@ -15,23 +14,16 @@ class Dashboard extends Component {
   };
 
   render() {
-    const logo = document.querySelectorAll('#splash-logo path');
-    console.log('logo: ', logo);
-
-    logo.forEach((entry) => {
-      console.log('Letter is', entry.getTotalLength());
-    });
-
     return (
-      <MainView>
-        <h1>React Modal</h1>
+      <div>
+        <h1>Open Me Baby</h1>
         <ModalView show={this.state.show} handleClose={this.hideModal} />
         <button type="button" onClick={this.showModal}>
           open
         </button>
-      </MainView>
+      </div>
     );
   }
 }
 
-export default Dashboard;
+export default App;
