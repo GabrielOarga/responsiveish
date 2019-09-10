@@ -5,7 +5,7 @@ import Sidebar from '../../components/Sidebar/Sidebar.jsx';
 
 import './style.less';
 
-const GalleryView = ({children}) => {
+const GalleryView = ({children, history}) => {
   return (
     <div className={'gallery-view'}>
       <Sidebar />

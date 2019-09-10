@@ -20,13 +20,34 @@
   width: 100vw;
   height: 100vh;
 
-  overflow: auto;
-
   display: grid;
-  grid-template-columns: 200px [start] auto [end] 200px;
   grid-template-rows: [start] 40px [mid] auto [end];
 
-  grid-template-areas: "navbar navbar navbar";
+  grid-template-areas:
+    "navbar"
+    "transition"
+;
+}
 
-  grid-gap: 10px 15px;
+.transition-group {
+  overflow: auto;
+
+  grid-area: transition;
+
+  display: grid;
+
+  grid-template-columns: 200px [start] auto [end] 200px;
+  grid-gap: 15px 10px;
+}
+
+.item-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.item-enter.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.item-exit {
+  opacity: 0;
 }
