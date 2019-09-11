@@ -17,7 +17,7 @@ const ModalView = ({ handleClose, show, children }) => {
   return (
     <div className={showHideClassName}>
       <section className="modal">
-        <Splash show />
+        {/*<Splash show />*/}
         <Navbar>
           <button onClick={() => {console.log('hi'); handleClose()}}>close</button>
           <button onClick={() => {console.log('hi'); history.goBack()}}>back</button>
