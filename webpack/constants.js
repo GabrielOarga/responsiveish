@@ -11,7 +11,7 @@ const VERSION = version;
 const PRODUCTION = 'production';
 const DEVELOPMENT = 'development';
 const DEFAULT_HOST = 'localhost';
-const DEFAULT_PORT = 8000;
+const DEFAULT_PORT = 8001;
 const DEFAULT_PUBLIC_PATH = '/';
 
 module.exports = {

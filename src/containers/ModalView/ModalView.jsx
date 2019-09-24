@@ -22,7 +22,7 @@ const ModalView = ({ handleClose, show, children }) => {
           <button onClick={() => {console.log('hi'); handleClose()}}>close</button>
           <button onClick={() => {console.log('hi'); history.goBack()}}>back</button>
         </Navbar>
-        <Route render={({ location, history }) => {console.log(history); return(
+        <Route render={({ location, history }) => {console.log(history); return (
           <>
             <Route exact path="/" render={() => (
               <Redirect to="/gallery" />
