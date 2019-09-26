@@ -1,9 +1,12 @@
 @import '../../styles/variables.less';
 
 .sidebar {
-  grid-area: sidebar;
-
   background: none;
+  flex: 0 0 300px;
+
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
 
   .filter-category {
     display: flex;
@@ -13,11 +16,19 @@
     overflow: hidden;
 
     margin-bottom: 40px;
+    border-radius: 8px;
 
-    background: wheat;
+    background: white;
 
     .header {
       flex: 0 0 50px;
+
+      display: flex;
+
+      justify-content: flex-start;
+      align-items: center;
+
+      padding: 0 10px;
     }
 
     .content {
@@ -27,6 +38,13 @@
       .filter {
         background: white;
         height: 50px;
+
+        display: flex;
+
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px 0 10px;
       }
 
       &.expanded {
@@ -37,15 +55,40 @@
         max-height: 0;
       }
     }
+  }
 
-    .filter {
-      background: antiquewhite;
-      height: 50px;
 
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      padding: 0 10px 0 10px;
+  @media only screen and (max-width: 1145px) {
+    flex: 1 1 calc(4 * 270px);
+    min-width: 540px;
+
+    padding-top: 0;
+    margin-top: 20px;
+    margin-right: 0;
+
+    display: flex;
+    flex-flow: wrap row;
+
+    justify-content: flex-start;
+    align-items: start;
+
+    .filter-category {
+      flex: 1 1 250px;
+      max-width: calc(50% - 20px);
+      margin: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    min-width: 0;
+
+    justify-content: center;
+
+    .filter-category {
+      flex: 0 0 250px;
+      min-width: 250px;
+
+      margin: 10px;
     }
   }
 }

@@ -4,10 +4,13 @@
   left: 0;
   width:100%;
   height: 100%;
-  background: none;
+  background: rgba(0, 0, 0, 0.4);
+
+  justify-content: center;
+  align-items: center;
 
   &.display-block {
-    display: block;
+    display: flex;
   }
 
   &.display-none {
@@ -21,12 +24,25 @@
   height: 100vh;
 
   display: grid;
-  grid-template-rows: [start] 40px [mid] auto [end];
+  grid-template-rows: 40px 150px auto;
+
+  grid-gap: 0;
 
   grid-template-areas:
     "navbar"
+    "box"
     "transition"
 ;
+
+  .box-box {
+    grid-area: box;
+
+    background: #ffffff;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+
+
+    z-index: 1060
+  }
 }
 
 .transition-group {
@@ -36,8 +52,19 @@
 
   display: grid;
 
-  grid-template-columns: 200px [start] auto [end] 200px;
-  grid-gap: 15px 10px;
+  grid-template-columns: 50px auto 50px;
+  grid-template-areas: " . gallery-view .";
+  grid-gap: 0 10px;
+
+  @media only screen and (max-width: 1242px) {
+    grid-template-columns: 5px auto auto;
+  }
+
+  @media only screen and (max-width: 1145px) {
+    grid-template-columns: auto ;
+    grid-template-areas: "gallery-view";
+    grid-gap: 0;
+  }
 }
 
 .item-enter {

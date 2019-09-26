@@ -1,19 +1,24 @@
 .gallery {
-  background: white;
+  background: none;
+  margin-top: 20px;
 
-  grid-area: gallery;
-
-  justify-self: center;
+  flex: 0 1 calc(4 * 270px);
+  min-width: 270px;
 
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 
   .gallery-item {
-    background: #1dcaff;
-    border: 1px solid grey;
+    background: #ffffff;
+    border-radius: 8px;
     margin: 10px;
 
     flex: 0 0 250px;
     min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

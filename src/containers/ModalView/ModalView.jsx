@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import Navbar from '../../components/Navbar/Navbar';
@@ -9,7 +9,6 @@ import ProductView from '../ProductView/ProductView';
 import { createBrowserHistory } from 'history';
 
 import './style.less';
-import Splash from '../../components/Splash/Splash';
 
 const ModalView = ({ handleClose, show, children }) => {
   const showHideClassName = show ? 'modal-background display-block' : 'modal-background display-none';
@@ -17,11 +16,11 @@ const ModalView = ({ handleClose, show, children }) => {
   return (
     <div className={showHideClassName}>
       <section className="modal">
-        {/*<Splash show />*/}
         <Navbar>
           <button onClick={() => {console.log('hi'); handleClose()}}>close</button>
           <button onClick={() => {console.log('hi'); history.goBack()}}>back</button>
         </Navbar>
+        <div className={'box-box'} />
         <Route render={({ location, history }) => {console.log(history); return (
           <>
             <Route exact path="/" render={() => (
