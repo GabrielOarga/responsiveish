@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Content from './Content';
 
 export default class Category extends Component {
-  state = { expanded: true };
+  state = { expanded: false };
 
   render () {
     return (
