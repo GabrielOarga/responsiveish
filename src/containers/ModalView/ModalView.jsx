@@ -23,10 +23,6 @@ const ModalView = ({ handleClose, show, children }) => {
         <div className={'box-box'} />
         <Route render={({ location, history }) => {console.log(history); return (
           <>
-            <Route exact path="/" render={() => (
-              <Redirect to="/gallery" />
-            )}
-            />
             <TransitionGroup className={'transition-group'}>
               <CSSTransition
                 key={location.key}
