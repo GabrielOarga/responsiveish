@@ -2,9 +2,10 @@ import React from 'react';
 
 import './style.less';
 
-const Item = ({index}) => {
+// eslint-disable-next-line react/prop-types
+const Item = ({index, itemClicked}) => {
   return (
-    <div className={'gallery-item'}>
+    <div className={'gallery-item'} onClick={() => itemClicked(index)}>
       item {index}
     </div>
   )

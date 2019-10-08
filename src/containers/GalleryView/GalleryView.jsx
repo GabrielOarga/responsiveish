@@ -8,6 +8,7 @@ import './style.less';
 const GalleryView = ({children, history}) => {
   return (
     <>
+      <div className={'box-box'} />
       <div className={'gallery-view'}>
         <Sidebar />
         <Gallery />

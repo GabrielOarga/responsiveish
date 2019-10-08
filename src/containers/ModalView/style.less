@@ -24,36 +24,39 @@
   height: 100vh;
 
   display: grid;
-  grid-template-rows: 40px 150px auto;
+  grid-template-columns: 0 auto 0;
+  grid-template-rows: 40px auto;
 
   grid-gap: 0;
 
   grid-template-areas:
-    "navbar"
-    "box"
-    "transition"
-;
+    ". navbar ."
+    ". transition-group .";
+}
 
-  .box-box {
-    grid-area: box;
+.box-box {
+  grid-area: box-box;
 
-    background: #ffffff;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 
 
-    z-index: 1060
-  }
+  z-index: 1060
 }
 
 .transition-group {
   overflow: auto;
 
-  grid-area: transition;
+  grid-area: transition-group;
 
   display: grid;
 
-  grid-template-columns: 50px auto 50px;
-  grid-template-areas: " . gallery-view .";
+  grid-template-columns: auto;
+  grid-template-rows: 150px auto;
+  grid-template-areas:
+    "box-box"
+    "gallery-view"
+;
   grid-gap: 0 10px;
 
   @media only screen and (max-width: 1242px) {

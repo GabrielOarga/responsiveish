@@ -51,10 +51,10 @@
     "react/jsx-boolean-value": 1,
     "react/no-string-refs": 1,
     "react/jsx-wrap-multilines": 1,
-    "react/jsx-no-bind": 1,
+    "react/jsx-no-bind": 0, //The performance benefit of using bound functions in onClick() is probably insignificant
     "react/require-render-return": 1,
     "react/no-is-mounted": 1,
-    "react/prop-types": 1,
+    "react/prop-types": 0, //This should probably be unsurpressed
     "react/jsx-no-target-blank": 1,
     "no-extra-boolean-cast": 1,
     "react/no-deprecated": 2,

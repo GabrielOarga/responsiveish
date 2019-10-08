@@ -12,7 +12,7 @@ const Sidebar = () => {
     <>
       <div id={'collapse-trigger'} onClick={
         () => {
-          console.log('cilcked', collapsed);
+          console.log('clicked', collapsed);
 
           if(collapsed) {
             expandSection(sectionRef.current);
