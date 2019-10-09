@@ -1,5 +1,21 @@
 .editor-view {
   grid-area: editor-view;
 
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+
   background: none;
+
+  display: grid;
+  overflow: auto;
+
+  grid-template-rows: 150px auto;
+  grid-template-columns: 0 auto auto 0;
+
+  grid-template-areas:
+    "editor-toolbar editor-toolbar editor-toolbar editor-toolbar"
+    ". styleboard-panel editor-panel ."
+;
+
+  grid-gap: 20px;
 }

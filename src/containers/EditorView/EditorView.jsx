@@ -1,11 +1,15 @@
 import React from 'react';
 
+import { Toolbar, StyleboardPanel, EditorPanel } from '../../components/Editor';
+
 import './style.less';
 
-const EditorView = ({children, history}) => {
+const EditorView = () => {
   return (
     <div className={'editor-view'}>
-      Editor View
+      <Toolbar />
+      <StyleboardPanel />
+      <EditorPanel />
     </div>
   )
 };

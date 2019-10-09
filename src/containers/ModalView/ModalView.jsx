@@ -21,7 +21,7 @@ const ModalView = ({ handleClose, show }) => {
           <button onClick={() => {console.log('close'); handleClose()}}>close</button>
           <button onClick={() => {console.log('go back'); history.goBack()}}>back</button>
         </Navbar>
-        <Route render={({ location, history }) => {console.log(history); return (
+        <Route render={({ location }) => { return (
           <>
             <TransitionGroup className={'transition-group'}>
               <CSSTransition
