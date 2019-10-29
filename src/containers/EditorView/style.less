@@ -10,12 +10,22 @@
   overflow: auto;
 
   grid-template-rows: 150px auto;
-  grid-template-columns: 0 auto auto 0;
+  grid-template-columns: 0 auto 0;
 
   grid-template-areas:
-    "editor-toolbar editor-toolbar editor-toolbar editor-toolbar"
-    ". styleboard-panel editor-panel ."
+    "editor-toolbar editor-toolbar editor-toolbar"
+    ". flex-container ."
 ;
 
   grid-gap: 20px;
+
+  .flex-container {
+    grid-area: flex-container;
+
+    display: flex;
+    flex-flow: nowrap row;
+
+    justify-content: space-around;
+    overflow: auto;
+  }
 }

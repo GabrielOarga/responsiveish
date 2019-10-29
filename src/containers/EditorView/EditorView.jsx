@@ -8,8 +8,10 @@ const EditorView = () => {
   return (
     <div className={'editor-view'}>
       <Toolbar />
-      <StyleboardPanel />
-      <EditorPanel />
+      <div className={'flex-container'}>
+        <StyleboardPanel />
+        <EditorPanel />
+      </div>
     </div>
   )
 };

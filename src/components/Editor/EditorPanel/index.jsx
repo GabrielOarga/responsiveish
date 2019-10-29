@@ -5,7 +5,9 @@ import './style.less';
 const EditorPanel = () => {
   return (
     <div className={'editor-panel'}>
-      EditorPanel
+      <div className={'list-container scrollable'}>
+        <div className={'big-content'} />
+      </div>
     </div>
   )
 };
